@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Website Designing using HTML and CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+</head>
+<body>
+   <section id="header" >
+       <div class="container">
+           <img src="Images/Logo_1.PNG" class="logo"> 
+           <div class="header-text">
+               <h1> Capturing Awesomeness! </h1>
+               <span class="square"> </span>
+               <p>Every second. Every moment.<br>-By : Anishka Singh, Mihika Dravid</p>
+               <a href="readmore.html">
+                <button class="common-btn">Read More</button>
+               </a>
+               <div class="line">
+                   <span class="line-1"></span><br>
+                   <span class="line-2"></span><br>
+                   <span class="line-3"></span>
+               </div>
+           </div>
+       </div>
+   </section>
+   <nav id="sideNav">
+       <ul>
+           <li><a href="#header">HOME</a></li>
+           <li><a href="#about">WHAT WE @CAPTURE IT! DO?</a></li>
+           <li><a href="#ourteam">OUR TEAM</a></li>
+           <li><a href="#gallery">GALLERY</a></li>
+           <li><a href="#contact">CONTACT US</a></li>
+       </ul>
+   </nav>
+   <img src="Images/menu.png" id="menuBtn">
+<!--about -->
+<section id="about">
+    <div class="about-left-col">
+        <img src="Images/about.PNG" alt="a woman holding a camera, smiling">
+    </div>
+    <div class="about-right-col">
+        <div class"about-text">
+            <h1>WHAT WE @CAPTURE IT! DO?</h1>
+            <span class="square"> </span>
+            <p><br><br>Hi, we are <strong>Capture It! </strong><br>We are artists with the camera, using a blend of technical skills and an artistic eye to take pictures of people, places, landscapes, food, you name it.<br><br></p>
+            <div class="line">
+                   <span class="line-1"></span><br>
+                   <span class="line-2"></span><br>
+                   <span class="line-3"></span>
+            </div>
+        </div>
+    </div>
+</section>
+<!--ourteam-->
+<section id="ourteam">
+    <h3>Our Team</h3>
+    <div class="ourteam-row">
+        <div class="ourteam-col">
+            <img src="Images/g1.PNG">
+            <h2>Anishka Singh</h2>
+            <p2>Landscape and Wildlife Photographer </p2>
+        </div>
+        <div class="ourteam-col">
+            <img src="Images/g2.PNG">
+            <h2>Mihika Dravid</h2>
+            <p2>Wedding Photographer </p2>
+        </div>
+    </div>
+    <div class="ourteam-btn">
+        <a href="cv.html">
+            <button class="common-btn">Download CV</button>
+        </a>
+    </div>
+</section>
+<!--Gallery-->
+<section id="gallery">
+    <h3>Gallery</h3>
+    <div class="gallery-row">
+        <div class="gallery-col">
+            <img src="Images/i1.PNG">
+            <p2>Wildlife photos</p2>
+        </div>
+        <div class="gallery-col">
+            <img src="Images/i4.PNG">
+            <p2>Landscape photos </p2>
+        </div>
+        <div class="gallery-col">
+            <img src="Images/i7.PNG">
+            <p2>Wedding photos </p2>
+        </div>
+        <div class="gallery-btn">
+        <a href="photos.html">
+            <button class="common-btn">View photos</button>
+        </a>
+        </div>
+    </div>
+</section>
+<!--ContactUs-->
+<section id="contact">
+    <h3>Contact Us</h3>
+    <div class="container contact-row">
+        <div class="contact-left-col">
+            <h2> Hey!</h2>
+            <p2>Drop us mail for all business enquiries.<br></p2>
+            <h4>Email id: captureit@gmail.com<br><br><br></h4>
+            <p2>We are open to feedback. Do let us know if you liked our work.<br> Or maybe even drop a hi! We'll get back to you :D<br><br></p2>
+            <form>
+                <input type="text" placeholder="Enter name">
+                <input type="email" placeholder="Enter your email id">
+                <input type="text" placeholder="Enter feedback"><br><br>
+                <div class="bttn=box">
+                    <button class="common-btn">Submit</button>
+                </div>
+            </form>
+        </div>
+        <div class="contact-right-col">
+            <img src="Images/contact.png">
+        </div>
+            
+    </div>
+</section>
+    
+    
+   <script>
+       var menuBtn = document.getElementById("menuBtn");
+       var sideNav = document.getElementById("sideNav");
+       sideNav.style.right="-250px";
+       menuBtn.onclick = function()
+       {
+           if(sideNav.style.right=="-250px")
+           {
+               sideNav.style.right="0";
+           }
+           else
+           {
+               sideNav.style.right="-250px";
+           }
+       }
+       
+       
+	var scroll = new SmoothScroll('a[href*="#"]');
+
+   </script> 
+</body>
+</html>
